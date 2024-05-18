@@ -1,0 +1,276 @@
+:root {
+--light-red: hsl(0, 100%, 67%); /* Reaction */
+--orangey-yellow: hsl(39, 100%, 56%); /* Memory */
+--green-teal: hsl(166, 100%, 37%); /* Verbal */
+--cobalt-blue: hsl(234, 85%, 45%); /* Visual */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk';
+    box-sizing: border-box;
+}
+
+@media (min-width: 1440px) {
+    
+
+body {
+    width: 1440px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+main {
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    box-shadow: 5px 2px 20px -5px rgba(3, 86, 174, 0.215);
+}
+main .result {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    border-radius: 35px;
+    background: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 2));
+}
+main .sumarry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    border-radius: 5px 10px 10px 5px;
+    padding: 20px;
+}
+
+.sumarry h3 {
+    text-align: start;
+}
+
+.sumarry .reaction, .memory, .verbal, .visual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    background: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 2));
+    border: none;
+    height: 10%;
+    color: #fff;
+    border-radius: 20px;
+}
+
+}
+
+
+
+@media (max-width: 500px) {
+    
+    body {
+        width: 400px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        box-shadow: 5px 2px 20px -5px rgba(3, 86, 174, 0.215);
+    }
+    main .result {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        border-radius: 0 0 30px 30px;
+        background: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        background: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 2));
+        padding: 20px;
+    }
+    main .sumarry {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px 10px 10px 5px;
+        padding: 10px;
+        align-items: center;
+    }
+
+
+    .reaction, .memory, .verbal, .visual {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 10%;
+        border-radius: 10px;
+        padding: 10px;
+        width: 70%;
+    }
+    
+    button {
+        cursor: pointer;
+        background: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        background: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 2));
+        border: none;
+        height: 10%;
+        color: #fff;
+        border-radius: 20px;
+        width: 70%;
+    }
+}
+
+
+body p {
+    font-size: 18px;
+}
+
+
+
+.great h2 {
+ text-align: center;
+}
+
+.great {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.great p {
+    width: 70%;
+text-align: center;
+color: hsl(224, 30%, 77%);
+}
+
+.result-ball h1 {
+    font-size: 50px;
+}
+
+.result-ball p {
+    font-size: 13px;
+    color: hsl(224, 60%, 87%);
+    opacity: 50%;
+}
+
+main .result-ball {
+    height: 8.5rem;
+    width: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    background: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: radial-gradient(circle, hsla(256, 72%, 26%, 1), hsla(241, 72%, 52%, 2));
+}
+
+
+
+
+/* Cor das H5 */
+
+.reaction h5 {
+    color: var(--light-red);
+}
+
+.memory h5 {
+    color: var(--orangey-yellow);
+}
+
+.verbal h5 {
+    color: var(--green-teal);
+}
+
+.visual h5 {
+    color: var(--cobalt-blue);
+}
+
+
+
+/* Arrumar o Sumário */
+
+.result-reaction, .result-memory, .result-verbal, .result-visual {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sumarry he {
+font-weight: 800;
+}
+
+/* Arrumar a cor de fundo do Sumário por partes */
+
+.reaction {
+    background-color: hsla(0, 100%, 50%, 0.1);
+}
+
+.memory {
+    background-color: hsla(60, 100%, 50%, 0.1);
+}
+
+.verbal {
+    background-color: hsla(120, 100%, 50%, 0.1);
+}
+
+.visual {
+    background-color: hsla(240, 100%, 50%, 0.1);
+}
+
+
+
+span {
+    color: hsla(222, 14%, 64%, 0.7);
+   font-weight: 800;
+}
+
+.p {
+font-weight: 800;
+color: hsl(241, 81%, 24%);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 10px; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+    button:hover {
+        background: linear-gradient(to bottom right, hsl(252, 100%, 17%), hsl(241, 81%, 24%));
+        background: radial-gradient(circle, rgb(58, 25, 148), rgb(25, 23, 171));
+    }
